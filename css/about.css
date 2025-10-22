@@ -1,0 +1,21 @@
+#about{
+ max-width:800px;
+ width: 85%;
+  margin-inline: auto;
+  padding-top: 180px;
+}
+
+#about h1{
+  text-align: center;
+}
+
+.about-content{
+  width: 100%;
+  font-size: 18px;
+  color: white;
+  text-align: justify;
+}
+
+.about-content p{
+  margin-bottom: 10px;
+}

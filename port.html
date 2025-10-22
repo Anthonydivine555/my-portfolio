@@ -1,63 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
+        
+	<script>
+        window.addEventListener("load", scrollEffect)
+        window.addEventListener("scroll", scrollEffect)
+        function scrollEffect () {
+            if(window.pageYOffset>=0 && window.pageYOffset < 350) {
+                const homeDOM = document.querySelector(".home");
+                homeDOM.style.color = "#660db9"
+
+                const aboutDOM = document.querySelector(".about");
+                aboutDOM.style.color = "white"
+            }
+            else if(window.pageYOffset >= 350) {
+                const aboutDOM = document.querySelector(".about");
+                aboutDOM.style.color = "#660db9"
+
+                const homeDOM = document.querySelector(".home");
+                homeDOM.style.color = "white"
+            }
+        }
+    </script> 
 </head>
 <link rel="stylesheet" href="css/port.css">
 <link rel="stylesheet" href="css/themify-icons/themify-icons.css">
+<!-- <link rel="stylesheet" href="css/about.css"> -->
+<!-- <link rel="stylesheet" href="css/contact.css"> -->
+
 <body>
     <header>
-       
         <div class="navbar">
-        <div class="logo"><span>d</span>ivine.</div>
-        
-          <input type="checkbox" id="check">
-           <label for="check"> 
-            <span class="ti-menu" id="menu"></span>  
-            <span class="ti-close" id="close"></span>  
-        </label>
-        
-        <ul>
-            <li><a href="#" class="home">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">blog</a></li>
-            <li><a href="#">contact</a></li>
-        </ul>
-    </div>
-    <div class="btn1">
-        <button>let's talk</button>
- 
-          </div>
- 
-</header>
-<main>
-    <div class="details">
-        <div class="content">
-        <div class="intro">
-        <h1>hi, i'm <span>anthony divine</span></h1>
-        <h2>frontend developer</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Quas reiciendis, molestias quidem aperiam omnis quo,<br> dignissimos  alias iusto placeat similique ullam officiis,<br> voluptas dolorem? Harum aliquam a corporis et vel!</p>
-        </div>
-        <div class="options">
-        <button class="btn2">hire me</button>
-        <button class="btn3">see project</button>
-    </div>
-    </div>
-    <div class="socials">
-        <a href="#"><span class="ti-linkedin"></span></a>   
-        <a href="#"><span class="ti-facebook"></span></a>   
-        <a href="#"><span class="ti-twitter"></span></a>   
-       </div>
-     </div>
-    <div class="image">
-        <img src="divine.jpg" alt="picture">
-    </div>
-</main>  
-</div>
+            <div class="logo"><span>d</span>ivine.</div>
 
-</div>  
+            <input type="checkbox" id="check">
+            <label for="check">
+                <span class="ti-menu" id="menu"></span>
+                <span class="ti-close" id="close"></span>
+            </label>
+
+            <ul>
+                <li><a href="#home" class="home">home</a></li>
+                <li><a href="#about" class="about">about</a></li>
+                <li><a href="#" for="portfolio">portfolio</a></li>
+                <li><a href="#" for="blog">blog</a></li>
+                <li><a href="#contact" for="contact">contact</a></li>
+            </ul>
+        </div>
+        <div class="btn1">
+            <button>let's talk</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="content">
+                <div class="intro">
+                    <h1>hi, i'm <span>anthony divine</span></h1>
+                    <h2>frontend developer</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas reiciendis, molestias quidem
+                        aperiam omnis quo, dignissimos alias iusto placeat similique ullam officiis, voluptas dolorem?
+                        Harum aliquam a corporis et vel!</p>
+                </div>
+                <div class="options">
+                    <button class="btn2">hire me</button>
+                    <button class="btn3">see project</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="divine.jpg" alt="">
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="page-title">
+                <h1><span>a</span>bout</h1>
+            </div>
+
+            <div class="about-content">
+                <p>A passionate frontend developer with a love for crafting clean, responsive, and intuitive web experiences. My journey into web dyevelopment began with a curiosity about how things work behind the scenes on the web, and quickly turned into deep passion for creating visually appealing, functional websites that users love to interact with.</p>
+
+                <p>I specialize in HTML, CSS, and JAVASCRIPT, and I'm always eager to explore technologies that push the boundaries of what can be done on the web. From building pixel-perfect designs to optimizing user interfaces for performance and accessibility, i thrive on turning complex challenges into elegant solutions.</p>
+
+                <p>Outside of coding, I'm a chemical engineer specialized in data science and process simluation. I believe that a balanced life enhances my creativity drives my work.</p>
+
+                <p>I'm always looking to collabrate with forward-thinking teams, take on exciting new projects, and grow my skills in new and innovative ways. If you're interested in working together, feel free to reach out!</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="page-title">
+                <h1>contact <span>me</span></h1>
+            </div>
+
+            <form action="">
+                <div class="input-container">
+                    <label for="first-name">first name</label>
+                    <input type="text" id="first-name">
+                </div>
+                <div class="input-container">
+                    <label for="last-name">last name</label>
+                    <input type="text" id="last-name">
+                </div>
+                <div class="input-container">
+                    <label for="email">email</label>
+                    <input type="text" id="email">
+                </div>
+                <div class="input-container">
+                    <label for="phone-number">phone number</label>
+                    <input type="number" id="phone-number">
+                </div>
+                <div class="input-container">
+                    <label for="message">message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div class="input-container">
+                    <a href="#">send message</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home">back to top</a>
+
+        <div class="socials">
+            <a href="#"><span class="ti-linkedin"></span></a>
+            <a href="#"><span class="ti-facebook"></span></a>
+            <a href="#"><span class="ti-twitter"></span></a>
+        </div>
+        <p>2025 Anthony divine. all right reserved</p>
+    </footer>
 </body>
+
 </html>
