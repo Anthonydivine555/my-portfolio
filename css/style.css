@@ -234,7 +234,7 @@ p{
     align-items: center;
 }
 
-.socials a{
+.socials .icon{
     background-color: white;
     color:#9a5cfe ;
     border: 3px solid;
