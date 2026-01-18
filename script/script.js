@@ -5,7 +5,6 @@ const sideMenu = document.querySelector('.menu-bar')
 menuElement.addEventListener('click', () => {
   sideMenu.style.left = '0'
   closeElement.style.display = 'block'
-  console.log('come here')
 })
 closeElement.addEventListener('click', () => {
   sideMenu.style.left = '-100%';
@@ -15,7 +14,6 @@ closeElement.addEventListener('click', () => {
 
 const menuList = document.querySelectorAll('.items')
 
-console.log(menuList[0])
 menuList.forEach(list => {
   list.addEventListener('click', () => {
     menuList.forEach(item => {

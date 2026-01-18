@@ -94,12 +94,12 @@ button{
     box-shadow: 3px 3px 10px rgb(102, 13, 185) ;
 }
 .btn1 button{
-    padding: 6px 12px ;
+    width: 150px;
+    height: 55px;
     background-color:#9a5cfe;
     color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: capitalize;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     border-radius: 7px;
     border: none;
     transition: all .3s ease;
@@ -185,8 +185,8 @@ p{
     gap: 1.5em;
 }
 .options .btn2{
-    width: 115px;
-    padding: 6px 12px ;
+    width: 150px;
+    height: 55px;
     background-color:#9a5cfe;
     color: white;
     text-transform: capitalize;
@@ -203,11 +203,10 @@ p{
     color: #9a5cfe;
 }
 .options .btn3{
-    width: 120px;
-    padding: 6px 12px ;
+    width: 150px;
+    height: 55px;
     background-color:transparent;
     color:#9a5cfe;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-transform: capitalize;
     font-size: 19px;
     border-radius: 7px;
@@ -321,7 +320,8 @@ header .navbar{
     }  
 
     .btn1 button{
-        padding: 8px 17px ;
+        width: 150px;
+        height: 55px;
         font-size:25px;
     }
 
@@ -358,6 +358,20 @@ header .navbar{
         justify-content: center;
     }
 
+}
+
+@media (max-width:800px){
+    .options{
+        flex-direction: column;
+        gap: 2em;
+        width: 100%;
+        align-items: center;
+    }
+
+    .options .btn2, .options .btn3{
+        width: 70%;
+        border-radius: 50px;
+    }
 }
 
 
