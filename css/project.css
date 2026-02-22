@@ -10,6 +10,19 @@
   margin-inline: auto; 
 }
 
+.pagination{
+  width: 100%;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.expand-btn{
+  margin-inline: auto;
+  text-align: center;
+}
+
 .project-container .title{
   color: white;
   margin-bottom: 40px;
@@ -43,6 +56,11 @@
 
 .project-type:hover{
 background-color: #9a5cfe;
+color: white;
+}
+
+.project-type.active{
+  background-color: #9a5cfe;
 color: white;
 }
 
@@ -138,7 +156,12 @@ color: white;
   font-size: 14px;
 }
 
-
+.no-project-message{
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(101, 97, 97);
+}
 
 @media screen and (max-width: 800px) {
   .project-type{

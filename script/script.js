@@ -1,3 +1,4 @@
+
 const menuElement = document.getElementById('menu')
 const closeElement = document.getElementById('close')
 const sideMenu = document.querySelector('.menu-bar')
@@ -34,7 +35,6 @@ window.addEventListener("load", scrollEffect)
 window.addEventListener("scroll", scrollEffect)
 function scrollEffect () {
   menuList.forEach(item => {
-    console.log(window.pageYOffset)
     item.classList.remove('active')
     if(window.pageYOffset>=0 && window.pageYOffset < 550 && item.textContent.trim() === 'home') {
         item.classList.add('active')
@@ -49,4 +49,4 @@ function scrollEffect () {
       }
   })
 }
-  
+
