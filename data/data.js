@@ -23,7 +23,7 @@ export let projects = [
   {
     name: 'Calculator website',
     languages: ['html', 'css', 'javascript'],
-    website: '"https://calculator-beta-nine-83.vercel.app/',
+    website: 'https://calculator-beta-nine-83.vercel.app/',
     thumbnail: 'image/calculator-thumbnail.png',
     category: "task"
   },
