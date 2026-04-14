@@ -16,7 +16,7 @@ export let projects = [
    {
     name: 'fetching, filtering and paginating products',
     languages: ['html', 'tailwindcss', 'javascript'],
-    website: 'https://clipboard-landing-page-solution-tau.vercel.app/',
+    website: 'https://fetching-filtering-and-pagination-o.vercel.app/',
     thumbnail: 'image/fetch-product-thumbnail.png',
     category: "remote project"
   },
