@@ -45,7 +45,7 @@ export const projects = [
     description:
       "A modern e-commerce platform where users can browse products, add items to their cart, save favorites, and manage their shopping experience.",
     languages: ["html", "tailwindcss", "javascript"],
-    website: "e-biz-ecommerce-website.vercel.app",
+    website: "https://e-biz-ecommerce-website.vercel.app/",
     thumbnail: exclusive,
     category: "Personal project",
   },
