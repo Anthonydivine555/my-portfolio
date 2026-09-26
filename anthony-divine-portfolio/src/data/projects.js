@@ -1,5 +1,5 @@
 import transvo from "@/assets/transvo-thumbnail.png";
-import eatinghabit from "@/assets/eatinghabit-thumbnail.png";
+import techbridge from "@/assets/techbridge-thumbnail.png";
 import exclusive from "@/assets/ecommerce-thumbnail.png";
 import repairhub from "@/assets/repairhub-thumbnail.png";
 import fxChecker from "@/assets/fx-checker-thumbnail.png";
@@ -40,6 +40,15 @@ export const projects = [
     category: "Hackathon project",
   },
   {
+    name: "TechBridge",
+    github: `${GH_USER}/techbridge-task-1`,
+    description: "Platform for practical tech learning and hands-on internship experience.",
+    languages: ["html", "tailwindcss", "react"],
+    website: "https://techbridge-task-1-phi.vercel.app/",
+    thumbnail: techbridge,
+    category: "Personal project",
+  },
+  {
     name: "Exclusive",
     github: `${GH_USER}/E-BIZ-ECOMMERCE-WEBSITE`,
     description:
@@ -58,14 +67,5 @@ export const projects = [
     website: "https://tournax-ten.vercel.app/",
     thumbnail: tournax,
     category: "Ongoing project",
-  },
-  {
-    name: "eatingHabit App",
-    github: "https://github.com/PeeCee45/EatHabit",
-    description: "Meal and habit tracking app with a clean, focused daily overview.",
-    languages: ["html", "tailwindcss", "javascript", "nextjs"],
-    website: "https://eat-habit.vercel.app/",
-    thumbnail: eatinghabit,
-    category: "Personal project",
-  },
+  }
 ];
